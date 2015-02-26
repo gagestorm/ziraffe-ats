@@ -1,0 +1,155 @@
+<div class="super-success"></div>
+<div class="container squeeze" >
+    <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation"><a href="#" data-toggle="modal" data-target="#registration" class="btn-blank-simple sign-up">SIGN UP NOW</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted"><img src="{{{data.base_url}}}public/image/logo.png" /></h3>
+    </div>
+</div>
+
+<div class="broad-red">
+    <center>
+        <img src="{{{data.base_url}}}public/image/logo-transparent.png" class="background-logo" />
+        <br/><br/>
+        <h1>ZIRAFFE</h1>
+        <h3 class="tagline">Seamless hiring process through recruiters</h3>
+        <br/>
+        <button type="button" class="btn-white btn sign-up" data-toggle="modal" data-target="#registration">
+            <span class="main">SIGN UP</span>
+            <span class="tag">for early access</span>
+        </button>
+    </center>
+</div>
+<br/><br/>
+<div class="squeeze container">
+    <p class="information">Ziraffe is a cloud based platform that transforms your recruitment interactions with recruitment consultants into a pleasant one. Engage with your recruitment consultants for once and then complete the remaining process entirely without a call or a mail. All in one platform absolutely for free. 
+    </p>
+    
+    <div class="space"></div>
+    <div class="space"></div>
+    <h4 class="semi-heading">HOW IT WORKS</h4>
+    <img src="{{{data.base_url}}}public/image/diagram.png" class="img-responsive slide-top"/>
+    <div class="space"></div>    
+    <div class="space"></div>
+    <div class="space"></div>
+
+    <p class="orient orient-left slide-left">
+        <b>Recruitment Agencies</b>
+        <i class="glyphicon glyphicon-ok"></i> Upload Cv on the chat <br/>
+        <i class="glyphicon glyphicon-ok"></i> Know real time status on the candidate <br/>
+        <i class="glyphicon glyphicon-ok"></i> Feedback and notes from the employer <br/>
+        <i class="glyphicon glyphicon-ok"></i> No calls and mails
+    </p>
+    
+    <p class="orient orient-right slide-right">
+        <b>Companies</b>
+        <i class="glyphicon glyphicon-ok"></i> Get all your application from recruiters at one place,  <br/>
+        <i class="glyphicon glyphicon-ok"></i> Notify the status of the candidate then and there  <br/>
+        <i class="glyphicon glyphicon-ok"></i> Avoid duplication and save lot of time  <br/>
+    </p>    
+    <div class="clearfix"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+    
+</div>
+
+<center>
+    <p class="information">It's simple. Fast and organised. Cloud communication 2.0
+    </p>
+    <img src="{{{data.base_url}}}public/image/screen.png" class="img-responsive"/>
+</center>
+    
+<div class="grey-width">
+    <div class="container squeeze">
+    <h4 class="semi-heading">IS IT REALLY FREE</h4>
+    <p>Ziraffe is absolutely free 
+        We get revenue by selling our up scaled software tools
+        we charge nothing for this platform 
+        We are a cloud based platform to make the communication between the recruiter and employer 
+seamless during the recruiting process.</p>
+        
+    </div>
+</div>
+
+<div class="broad-red">
+    <div class="space"></div>
+    <div class="space"></div>
+    <center class="slide-bottom">        
+        <h1 class="bold-heading">Ready to go?</h1>
+        <h4>Sign up for early access now.</h4>
+        <button class="btn-white btn sign-up" data-toggle="modal" data-target="#registration">
+            <span class="main">SIGN UP</span>
+            <span class="tag">for early access</span>
+        </button>        
+    </center>
+</div>
+
+
+<div class="modal fade" id="registration">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Register for early access of Ziraffe.</h4>
+      </div>
+      <div class="modal-body">
+          
+        <form class="form-horizontal" action="{{{data.base_url}}}register" method="POST" id="form-data">
+          <div class="error-form alert alert-danger hidden"></div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Full Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputEmail3" name="name" placeholder="Your Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputcompany" class="col-sm-2 control-label">Company</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputcompany" name="company" placeholder="Company">
+            </div>
+          </div>            
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Work Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3" name="email" placeholder="Email">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="previous" class="col-sm-2 control-label">Current Software</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="previous" id="previous" placeholder="Recruitment software that you are using...">
+            </div>
+          </div>            
+          <div class="form-group">
+            <label for="inputsize" class="col-sm-2 control-label">Company Size</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" name="size" id="inputsize" placeholder="Company Size">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputsize" class="col-sm-2 control-label">Location</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="location" id="inputsize" placeholder="Location">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="country" class="col-sm-2 control-label">Country</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="country" id="country" placeholder="Country">
+            </div>
+          </div>            
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-success">Register</button>
+            </div>
+          </div>
+        </form>
+          
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
