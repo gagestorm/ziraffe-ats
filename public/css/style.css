@@ -76,6 +76,7 @@
     letter-spacing: 2px; 
     margin-bottom: 20px;
 }
+.small-heading{ font-size: 15px; color:rgb(164, 32, 58); text-transform: uppercase; padding-top:5px; font-weight: bold; }
 .bold-heading{ font-weight:200; }
 .space{ height:20px; }
 .orient b{ display: block; color:#E74C3C; padding-bottom: 10px; font-size: 18px;}
@@ -90,3 +91,13 @@
 .grey-width{ width:100%; min-height: 200px; border-top:4px solid #eee; }
 .grey-width .semi-heading{ margin-top:50px; color:#888; font-weight:900; }
 .modal-header{ background:#E74C3C; color:#fff; font-weight:bold; }
+
+.blue-col .glyphicon{
+    color:#3498DB; font-size: 50px;
+} .blue-col p{ color:#888; font-size: 18px; font-style: italic ; }
+.red-col .glyphicon{
+    color:#E74C3C; font-size: 50px;
+} .red-col p{ color:#888; font-size: 18px; font-style: italic ; }
+.green-col .glyphicon{
+    color:#2ECC71; font-size: 50px;
+} .green-col p{ color:#888; font-size: 18px; font-style: italic ; }

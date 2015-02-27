@@ -2,23 +2,27 @@ function ajax(e,t,o,r){debug&&console.log("A "+e+" AJAX request to "+o+" with da
 
 $(document).ready(function(){
     
+    $('.error-form').hide();
     $("#form-data").submit(function(e){
         e.preventDefault();
         var t = $("#form-data").serialize(), o = $(".error-form");
         var r = BASE.serialToObject(t);
         
         if( r.name != "" && r.company != "" && r.size != "" && r.email != "" && r.country != "" && r.location !="" && r.previous!="" ){
-            $(".error-form").hide()
+            o.hide()
             ajax("POST",t,$(this).attr("action"),function(response){
+                $('.btn-success').html("Sending...");
                 if(response.success){
                     $("#registration").modal('hide');
-                    $(".super-success").show().html("Great! You will hear from ziraffe soon.");    
+                    $(".super-success").show().html("Great! You will hear from ziraffe soon.");   
+                    document.body.scrollTop = 0;
                 }else
-                    $(".error-form").show().html("Somethign went wrong. Try Again.");
-            
+                    o.show().html("Somethign went wrong. Try Again.");
+                
             });
         }else{
-            $(".error-form").show().html("All fields are required");
+            console.log("Some error");
+            o.show().html("All fields are required");
         }
     
     });
